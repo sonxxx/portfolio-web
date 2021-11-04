@@ -22,12 +22,12 @@
       <a href="#">Song Hee's Portfolio</a>
     </div>
     <ul class="navbar__menu">
-      <li class="navbar__menu__item active">Home</li>
-      <li class="navbar__menu__item">About</li>
-      <li class="navbar__menu__item">Skills</li>
-      <li class="navbar__menu__item">My work</li>
-      <li class="navbar__menu__item">Testimonial</li>
-      <li class="navbar__menu__item">Contact</li>
+      <li class="navbar__menu__item active" data-link="#home">Home</li>
+      <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#work">My work</li>
+      <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+      <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
 
     <!-- Toggle button -->
@@ -38,10 +38,12 @@
 
   <!-- Home -->
   <section id="home">
-    <img src="imgs/profile.png" alt="Song Hee's profile photo" class="home__avatar" />
-    <h1 class="home__title">Web Development Portfolio</h1>
-    <h2 class="home__description"></h2>
-    <button class="home__contact">CONTACT ME</button>
+    <div class="home__container">
+      <img src="imgs/profile.png" alt="Song Hee's profile photo" class="home__avatar" />
+      <h1 class="home__title">Web Development Portfolio</h1>
+      <h2 class="home__description"></h2>
+      <button class="home__contact">CONTACT ME</button>
+    </div>
   </section>
 
   <!-- About -->
@@ -174,16 +176,16 @@
       <h1>My work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
-        <button class="category__btn active">
+        <button class="category__btn active" data-filter="*">
           All<span class="category__count">8</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="front-end">
           Front-end<span class="category__count">3</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="back-end">
           Back-end<span class="category__count">3</span>
         </button>
-        <button class="category__btn">
+        <button class="category__btn" data-filter="mobile">
           Mobile<span class="category__count">2</span>
         </button>
       </div>
@@ -297,6 +299,11 @@
 
     <p class="contact__rights">2021 SongHee - All rights reserved</p>
   </section>
+
+  <!-- Arrow up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
 </body>
 

@@ -16,16 +16,23 @@ document.addEventListener('scroll', () => {
 const navbarMenu = document.querySelector('.navbar__menu');
 
 navbarMenu.addEventListener('click', (event) => {
-
   const target = event.target;
   const link = target.dataset.link;
 
   if(link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   console.log(event.target.dataset.link);
 
   scrollIntoView(link);
+});
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 // Handle click on "contact me" button on home
@@ -78,7 +85,6 @@ workBtnContainer.addEventListener('click', (e) => {
   //target에는 항상 'BUTTON'만이 할당되어진다!
   const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected');
-
 
   projectContainer.classList.add('anim-out');
   setTimeout(() => {

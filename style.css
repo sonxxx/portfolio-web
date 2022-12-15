@@ -1,8 +1,4 @@
 @font-face {
-  /* font-family: 'spoqaHanSansNeo';
-  src: url(./fonts/SpoqaHanSansNeo-Medium.woff2) format('woff2');
-  font-family: 'spoqaHanSansNeoRegular';
-  src: url(./fonts/SpoqaHanSansNeo-Regular.woff2) format('woff2'); */
   font-family: 'NotoSansKR';
   src: url(./fonts/NotoSansKR-Regular.otf) format('woff2');
 }
@@ -153,6 +149,7 @@ p {
   display: none;
 }
 
+
 /* Home */
 #home {
   background: url('imgs/home-background.png') center/cover;
@@ -214,6 +211,7 @@ p {
   margin: 0 auto;
 }
 
+
 /* About */
 #about {
   margin-bottom: 150px;
@@ -221,18 +219,7 @@ p {
 #about h1 {
   margin-bottom: 140px;
 }
-/* .about__info {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 60px 70px;
-  height: auto;
- border: 1px solid var(--color-light-grey);
-  border-radius: 15px;
-  background-color: var(--color-yellow);
-  box-shadow: 0 13px 35px -15px rgba(50, 50, 93, 0.25),
-    0 8px 50px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-} */
+
 .about__info {
   display: flex;
   justify-content: space-between;
@@ -250,7 +237,12 @@ p {
   font-weight: var(--weight-regular);
 }
 
+
 /* Skill */
+#skills {
+  background-color: var(--color-yellow);
+}
+
 .skillSet {
   display: flex;
   justify-content: space-between;
@@ -291,11 +283,6 @@ p {
 .skill__description li {
   text-align: left;
   margin-bottom: 20px;
-}
-
-/* Skills */
-#skills {
-  background-color: var(--color-yellow);
 }
 
 
@@ -430,6 +417,7 @@ p {
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
+
 
 /* Contact */
 #contact {

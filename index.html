@@ -25,8 +25,7 @@
       <li class="navbar__menu__item active" data-link="#home">Home</li>
       <li class="navbar__menu__item" data-link="#about">About</li>
       <li class="navbar__menu__item" data-link="#skills">Skills</li>
-      <li class="navbar__menu__item" data-link="#work">My work</li>
-      <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+      <li class="navbar__menu__item" data-link="#work">Projects</li>
       <li class="navbar__menu__item" data-link="#contact">Contact</li>
     </ul>
 
@@ -40,63 +39,44 @@
   <section id="home">
     <div class="home__container">
       <img src="imgs/profile.png" alt="Song Hee's profile photo" class="home__avatar" />
-      <h1 class="home__title">Web Development Portfolio</h1>
+      <h1 class="home__title">
+        프론트엔드 웹 개발자 포트폴리오
+      </h1>
+      <span>
+        즐거움을 찾기 위해 힘쓰고 공부하는 개발자, 정송희 입니다.
+        <br />
+        부족함을 채우기 위해 부단히 공부하고
+        <br />
+        성장하기 위해 노력하고 있습니다.
+      </span>
       <h2 class="home__description"></h2>
       <button class="home__contact">CONTACT ME</button>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="section section__container">
+  <section id="about" class="section about__container">
     <h1>About me</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tenetur quisquam nemo beatae eos hic iusto.
-      Numquam dolores tenetur dolore, mollitia necessitatibus cum consequuntur velit, excepturi porro, rem asperiores
-      repudiandae?</p>
-    <div class="about__majors">
-      <div class="major">
-        <div class="major__icon">
-          <i class="fab fa-html5"></i>
-        </div>
-        <h2 class="major__title">Front-end</h2>
-        <div class="major__description">
-          HTML, CSS, JavaScript, TypeScript
-          <br />Web APIs
-        </div>
+    <div class="about__info">
+      <div>
+        <i class="fas fa-user"></i> 이름
+        <br /><span>정송희</span>
       </div>
-      <div class="major">
-        <div class="major__icon">
-          <i class="fas fa-server"></i>
-        </div>
-        <h2 class="major__title">Back-end</h2>
-        <div class="major__description">
-          JavaScript, NodeJS
-          <br />Rest APIs
-        </div>
+      <div>
+        <i class="fas fa-calendar"></i> 생년월일
+        <br /><span>94.03.28</span>
       </div>
-      <div class="major">
-        <div class="major__icon">
-          <i class="fas fa-mobile-alt"></i>
-        </div>
-        <h2 class="major__title">Mobile</h2>
-        <div class="major__description">
-          React Native, Flutter
-        </div>
+      <div>
+        <i class="fas fa-map-pin"></i> 주소지
+        <br /><span>서울시 동작구</span>
       </div>
-    </div>
-    <div class="about__jobs">
-      <div class="job">
-        <img src="imgs/jobs/logo-itwill.png" alt="itwill" class="job__logo">
-        <div class="job__description">
-          <p class="job__name">Itwill IT인재양성전문교육기관 자바&오라클 개발자 양성 과정 수료</p>
-          <p class="job__period">2020.08 - 2021.01</p>
-        </div>
+      <div>
+        <i class="fas fa-phone fa-flip-horizontal"></i> 연락처
+        <br /><span>010-2737-3225</span>
       </div>
-      <div class="job">
-        <img src="imgs/jobs/logo-soongsil.png" alt="soongsil" class="job__logo">
-        <div class="job__description">
-          <p class="job__name">숭실대학교 평생교육원 컴퓨터공학과</p>
-          <p class="job__period">2015 - 2018</p>
-        </div>
+      <div>
+        <i class="fas fa-envelope"></i> 이메일
+        <br /><span>songe1177@naver.com</span>
       </div>
     </div>
   </section>
@@ -105,67 +85,40 @@
   <section id="skills" class="section">
     <div class="section__container">
       <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit at dolorum omnis ducimus neque explicabo odio
-        consequuntur sunt amet quo sint nostrum, repudiandae distinctio magni totam earum accusamus. Porro, inventore!
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 80%;"></div>
-            </div>
+      <div class="skillSet">
+        <div class="skill">
+          <div class="skill__icon">
+            <i class="fab fa-html5"></i>
           </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>CSS</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 80%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>JAVASCRIPT</span>
-              <span>80%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 80%;"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>TYPESCRIPT</span>
-              <span>60%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value" style="width: 60%;"></div>
-            </div>
+          <h2 class="skill__title">Front-end</h2>
+          <div class="skill__description">
+            <li>HTML, CSS</li>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>jQuery</li>
+            <li>React, Redux</li>
+            <li>Bootstrap, Web APIs</li>
           </div>
         </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-              <li><span>IntelliJ</span></li>
-              <li><span>Android Studio Code</span></li>
-              <li><span>iOS development tools</span></li>
-            </ul>
+        <div class="skill">
+          <div class="skill__icon">
+            <i class="fas fa-server"></i>
           </div>
-          <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>Scrum Master</span></li>
-              <li><span>Math</span></li>
-            </ul>
+          <h2 class="skill__title">Back-end</h2>
+          <div class="skill__description">
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+            <li>Firebase</li>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__icon">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h2 class="skill__title">Tools</h2>
+          <div class="skill__description">
+            <li>Github</li>
+            <li>Git</li>
           </div>
         </div>
       </div>
@@ -175,112 +128,62 @@
   <!-- Work -->
   <section id="work" class="section">
     <div class="section__container">
-      <h1>My work</h1>
-      <h3>Projects</h3>
+      <h1>Projects</h1>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
-          All<span class="category__count">8</span>
-        </button>
-        <button class="category__btn" data-filter="front-end">
-          Front-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn" data-filter="back-end">
-          Back-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn" data-filter="mobile">
-          Mobile<span class="category__count">2</span>
+          All
         </button>
       </div>
 
       <div class="work__projects">
-        <a href="https://github.com/sonxxx?tab=repositories" class="project" target="blank" data-type="front-end">
-          <img class="project__img" src="imgs/projects/youtube.png" alt="Youtube">
-          <div class="project__description">
-            <h3>Youtube Site</h3>
-            <span>Clone coding with HTML and CSS</span>
+        <div class="work__imageBox">
+          <div>
+            <a href="https://github.com/sonxxx/scent-web" class="project" target="blank" data-type="front-end">
+              <img class="project__img" src="imgs/projects/scent.png" alt="scent">
+              <div class="project__description">
+                <h3>Scent Shopping-mall Site</h3>
+                <span>HTML, CSS, JavaScript, React</span>
+              </div>
+            </a>
           </div>
-        </a>
 
-        <a href="https://github.com/sonxxx?tab=repositories" class="project" target="blank" data-type="front-end">
-          <img class="project__img" src="imgs/projects/navbar.png" alt="navbar">
-          <div class="project__description">
-            <h3>Responsive Navbar</h3>
-            <span>HTML, CSS with media query</span>
+          <div>
+            <a href="https://github.com/sonxxx/vanillaJS_Chrome" class="project" target="blank" data-type="front-end">
+              <img class="project__img" src="imgs/projects/jschrome.png" alt="jschrome">
+              <div class="project__description">
+                <h3>Javascript Chrome Web</h3>
+                <span>Clone coding with HTML,CSS and JavaScript</span>
+              </div>
+            </a>
           </div>
-        </a>
 
-        <a href="https://github.com/sonxxx?tab=repositories" class="project" target="blank" data-type="front-end">
-          <img class="project__img" src="imgs/projects/project3.png" alt="project3">
-          <div class="project__description">
-            <h3>Responsive WebPage</h3>
-            <span>HTML, CSS, JavaScript, Json</span>
-          </div>
-        </a>
-
-        <a href="" class="project" data-type="back-end">
-          <img class="project__img" src="imgs/projects/project4.png" alt="project4">
-          <div class="project__description">
-            <h3>Project</h3>
-            <span>Explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="back-end">
-          <img class="project__img" src="imgs/projects/project5.png" alt="project5">
-          <div class="project__description">
-            <h3>Project</h3>
-            <span>Explanation</span>
-          </div>
-        </a>
-
-        <a href="" class="project" data-type="mobile">
-          <img class="project__img" src="imgs/projects/project6.png" alt="project6">
-          <div class="project__description">
-            <h3>Project</h3>
-            <span>Explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="mobile">
-          <img class="project__img" src="imgs/projects/project7.png" alt="project7">
-          <div class="project__description">
-            <h3>Project</h3>
-            <span>Explanation</span>
-          </div>
-        </a>
-        <a href="" class="project" data-type="mobile">
-          <img class="project__img" src="imgs/projects/project8.png" alt="project8">
-          <div class="project__description">
-            <h3>Project</h3>
-            <span>Explanation</span>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials -->
-  <section id="testimonials" class="section">
-    <div class="section__container">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <div class="testimonials">
-        <div class="testimonial">
-          <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
-          <div class="testimonial__speech-bubble">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum neque labore laborum sit
-              molestias explicabo, beatae, minus alias autem tempore excepturi amet cum non voluptatem eum quis rerum
-              culpa.</p>
-            <p class="name"><a href="">Song Hee</a> / Itwill</p>
+          <div>
+            <a href="https://github.com/sonxxx/vanillaJS_Chrome" class="project" target="blank" data-type="front-end">
+              <img class="project__img" src="imgs/projects/portfolio-web.png" alt="portfolio-web">
+              <div class="project__description">
+                <h3>Portfolio-WebPage</h3>
+                <span>HTML, CSS, JavaScript</span>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="testimonial">
-          <div class="testimonial__speech-bubble">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum neque labore laborum sit
-              molestias explicabo, beatae, minus alias autem tempore excepturi amet cum non voluptatem eum quis rerum
-              culpa.</p>
-            <p class="name"><a href="">Song Hee</a> / Itwill</p>
+
+        <div class="work__description">
+          <div class="descriptionBox">
+            <h2>Scent 쇼핑몰 사이트</h2>
+            <span>React를 이용한 향수,디퓨저,비누 쇼핑몰 사이트</span><br /><br />
+            <a href="https://scent-web.netlify.app">👁‍🗨 https://scent-web.netlify.app</a>
           </div>
-          <img src="imgs/testimonial/people1.jpg" alt="People" class="testimonial__avatar">
+          <div class="descriptionBox">
+            <h2>나만의 Web 사이트</h2>
+            <span>Javascipt를 이용해 만든 Chrome 클론코딩 사이트로 간단한 to-do list 기능과 날씨API를 이용한 서비스 제공</span><br /><br />
+            <a href="https://js-chrome.netlify.app/">👁‍🗨 https://js-chrome.netlify.app/</a>
+          </div>
+          <div class="descriptionBox">
+            <h2>포트폴리오 웹사이트</h2>
+            <span>HTML, CSS, Javascript로 만든 포트폴리오 용도 제작 사이트</span><br /><br />
+            <a href="https://scent-web.netlify.app">👁‍🗨 https://scent-web.netlify.app</a>
+          </div>
         </div>
       </div>
     </div>
@@ -288,8 +191,8 @@
 
   <!-- Contact -->
   <section id="contact" class="section">
-    <h1 class="contact__title">Let's talk</h1>
-    <h2 class="contact__email">sh94sh@naver.com</h2>
+    <h1 class="contact__title">Contact</h1>
+    <h2 class="contact__email">songe1177@naver.com</h2>
     <div class="contact__links">
       <a href="https://github.com/sonxxx?tab=repositories" target="_blank">
         <i class="fab fa-github"></i>
@@ -299,7 +202,7 @@
       </a>
     </div>
 
-    <p class="contact__rights">2021 SongHee - All rights reserved</p>
+    <p class="contact__rights">2022 SongHee - All rights reserved</p>
   </section>
 
   <!-- Arrow up -->

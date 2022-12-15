@@ -1,6 +1,6 @@
 'use strict';
 
-// Make navbar transparent when it is on the top
+// navbar 스크롤시 색상 변경
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
@@ -12,7 +12,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Handle scrolling when tapping on the navbar menu
+// navbarmenu 클릭시 해당 섹션으로 이동 
 const navbarMenu = document.querySelector('.navbar__menu');
 
 navbarMenu.addEventListener('click', (event) => {
@@ -28,14 +28,14 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
-// Navbar toggle button for small screen
+// 화면 작아질 때를 위한 Navbar toggle button
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 
 navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
 
-// Handle click on "contact me" button on home
+// "contact me" 버튼 클릭 시 이동 
 const contackBtn = document.querySelector('.home__contact');
 
 contackBtn.addEventListener('click', () => {
@@ -43,7 +43,7 @@ contackBtn.addEventListener('click', () => {
 });
 
 
-// Make home slowly fade to transparent as the window scroll down
+// 창이 아래로 스크롤 될 때 home이 천천히 투명하게 fade
 const home= document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 
@@ -51,7 +51,7 @@ document.addEventListener('scroll', () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-//  Show "arrow up" button when scrolling down
+// 아래로 스크롤 시  "arrow up" 버튼 보여주기
 const arrowUp = document.querySelector('.arrow-up');
 
 document.addEventListener('scroll', () => {
@@ -62,7 +62,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Handle click on the "arrow up" button
+// "arrow up" 버튼 클릭 시 제일 상단 home으로 이동
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
 });

@@ -358,6 +358,10 @@ p {
   height: 350px;
 }
 
+.descriptionBox span {
+  font-size: var(--font-micro);
+}
+
 .work__projects.anim-out {
   opacity: 0;
   transform: scale(0.96) translateY(40px);
